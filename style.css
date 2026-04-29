@@ -1,0 +1,75 @@
+/* Configurações Gerais do Corpo do Site */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte */
+    background-color: #f4f7f6;      /* Um cinza bem clarinho, quase branco */
+    color: #333;                    /* Cor do texto (cinza escuro, não preto puro) */
+    margin: 0;                      /* Remove espaços em branco nas bordas */
+    padding: 0;
+    line-height: 1.6;               /* Melhora o espaçamento entre as linhas do texto */
+}
+
+/* Estilizando o Topo (Header) */
+header {
+    background-color: #65f5eef8;       /* Um tom de azul pastel/água */
+    color: #ffffff;  
+    font-style: italic; 
+    font-weight: bold;  
+    color: #1d3557;                 /* Cor do texto do cabeçalho */
+    text-align: center;              /* Centraliza o texto */
+    padding: 2rem 0;                /* Espaçamento interno (cima e baixo) */
+}
+
+/* Estilizando o Menu de Navegação */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;          /* Remove aquele sublinhado feio dos links */
+    color: #1d3557;                 /* Azul escuro para os links */
+    font-weight: bold;              /* Deixa a letra em negrito */
+    margin: 0 15px;                 /* Espaço entre um link e outro */
+}
+
+/* Estilizando as Seções */
+section {
+    padding: 40px;                  /* Espaço interno para o texto não grudar na borda */
+    max-width: 800px;               /* Impede que o site fique largo demais em telas grandes */
+    margin: 0 auto;                 /* Centraliza a seção na tela */
+}
+
+h2 {
+    color: #457b9d;                 /* Cor dos títulos das seções */
+    border-bottom: 2px solid #a8dadc; /* Cria aquela linha elegante abaixo do título */
+    display: inline-block;          /* Faz a linha ter o tamanho do texto */
+}
+
+footer {
+    
+    background-color: #65f5eef8;
+    color: #1d3557;
+    text-align: center;
+    padding: 20px;
+    /* Removi o flex para o texto não ficar "esmagado" na esquerda */
+}
+
+
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: translateY(-3px);
+}
