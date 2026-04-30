@@ -1,75 +1,278 @@
-/* Configurações Gerais do Corpo do Site */
-body {
-    font-family: 'Arial', sans-serif; /* Define a fonte */
-    background-color: #f4f7f6;      /* Um cinza bem clarinho, quase branco */
-    color: #333;                    /* Cor do texto (cinza escuro, não preto puro) */
-    margin: 0;                      /* Remove espaços em branco nas bordas */
+/* ==========================================================================
+SISTEMA DE CORES E FONTES
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
     padding: 0;
-    line-height: 1.6;               /* Melhora o espaçamento entre as linhas do texto */
+    box-sizing: border-box;
 }
 
-/* Estilizando o Topo (Header) */
+:root {
+    --cor-primaria: #604f47;    /* Marrom Escuro */
+    --cor-secundaria: #ba988d;   /* Bege/Rosado */
+    --cor-fundo: #f4f7f6;       /* Cinza Claro */
+    --cor-texto: #333333;       /* Cinza Escuro */
+    --cor-whatsapp: #25D366;     /* Verde WhatsApp */
+    --cor-whatsapp-hover: #128C7E;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==========================================================================
+1. GERAL
+   ========================================================================== */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--cor-fundo) 0%, #e2d1c3 100%); 
+    background-attachment: fixed;
+    color: var(--cor-texto);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* ========================================================================== */
+/* 2. HEADER (Topo) */
 header {
-    background-color: #65f5eef8;       /* Um tom de azul pastel/água */
-    color: #ffffff;  
-    font-style: italic; 
-    font-weight: bold;  
-    color: #1d3557;                 /* Cor do texto do cabeçalho */
-    text-align: center;              /* Centraliza o texto */
-    padding: 2rem 0;                /* Espaçamento interno (cima e baixo) */
+    background-color: var(--cor-primaria); /* Começa Marrom Escuro */
+    color: var(--cor-secundaria);          /* Texto começa Bege */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: block;
+    width: 100;
+    margin: 0;
+    padding: 0.8rem 10px;
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    transition: all 0.4s ease;
 }
 
-/* Estilizando o Menu de Navegação */
+
+
+header:hover {
+    background-color: var(--cor-secundaria); /* Fundo vira Bege no hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Força o Título e os Links a ficarem Marrom Escuro no Hover */
+header:hover h1,
+header:hover nav a {
+    color: var(--cor-primaria) !important;
+}
+
+/* 3. MENU (Navegação) */
 nav {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 nav a {
-    text-decoration: none;          /* Remove aquele sublinhado feio dos links */
-    color: #1d3557;                 /* Azul escuro para os links */
-    font-weight: bold;              /* Deixa a letra em negrito */
-    margin: 0 15px;                 /* Espaço entre um link e outro */
+    text-decoration: none;
+    color: var(--cor-secundaria); /* Cor inicial igual ao header */
+    font-weight: 600;            /* Deixa o "Sobre Mim" gordinho igual ao título */
+    font-style: italic;          /* Deixa em itálico igual ao título */
+    margin: 0 10px;
+    transition: 0.3s;
 }
 
-/* Estilizando as Seções */
+/* Quando você colocar o mouse direto no link, ele ganha um destaque a mais */
+nav a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+
+/* ==========================================================================
+4. SEÇÕES E EFEITO DE VIDRO
+   ========================================================================== */
 section {
-    padding: 40px;                  /* Espaço interno para o texto não grudar na borda */
-    max-width: 800px;               /* Impede que o site fique largo demais em telas grandes */
-    margin: 0 auto;                 /* Centraliza a seção na tela */
+    padding: 40px 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    
+    /* Efeito de Vidro */
+    background: rgba(255, 255, 255, 0.7); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
-    color: #457b9d;                 /* Cor dos títulos das seções */
-    border-bottom: 2px solid #a8dadc; /* Cria aquela linha elegante abaixo do título */
-    display: inline-block;          /* Faz a linha ter o tamanho do texto */
+    color: var(--cor-primaria);
+    border-bottom: 3px solid var(--cor-secundaria);
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
-footer {
-    
-    background-color: #65f5eef8;
-    color: #1d3557;
-    text-align: center;
-    padding: 20px;
-    /* Removi o flex para o texto não ficar "esmagado" na esquerda */
+/* Foto de Perfil */
+.profile-pic3 {
+    width: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    height: auto;
+    display: block;
+    margin: 10px auto 20px auto;
+    border: 3px solid #fff;
+    border-color: var(--cor-primaria);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* Lista de Serviços como Cards */
+ul {
+    list-style: none;
+    padding: 0;
+}
 
+ul li {
+    background: rgba(255, 255, 255, 0.5);
+    color: var(--cor-primaria);
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-left: 6px solid var(--cor-secundaria);
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.02);
+}
 
+ul li:hover {
+    background: var(--cor-secundaria);
+    color: white;
+    transform: translateX(10px);
+}
+
+/* ==========================================================================
+5. BOTÃO WHATSAPP
+   ========================================================================== */
 .whatsapp-button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    
-    background-color: #25D366;
-    color: white;
-    padding: 10px 20px;
+    background-color: var(--cor-whatsapp);
+    color: white !important; 
+    padding: 12px 25px;
     text-decoration: none;
     border-radius: 30px;
     font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
-
 
 .whatsapp-button:hover {
-    background-color: #128C7E;
+    background-color: var(--cor-whatsapp-hover);
     transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
+
+/* ==========================================================================
+6. RODAPÉ
+   ========================================================================== */
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ==========================================================================
+7. AJUSTES PARA CELULAR
+   ========================================================================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 5px 0;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px auto;
+    }
+}
+
+/* Classe que será adicionada via JavaScript */
+/* Classe que o JavaScript ativa ao rolar a página */
+.header-small {
+    padding: 0.6rem 10px !important;
+    /* Coloquei um marrom um pouco mais forte para dar leitura na transparência */
+    background-color: rgba(96, 79, 71, 0.98) !important;
+}
+
+.header-small h1,
+.header-small nav a {
+    font-size: 1.2rem !important; /* Diminui o texto para acompanhar o header */
+    color: var(--cor-secundaria) !important; /* Força o texto a ficar Bege */
+}
+
+/* Garante que se você passar o mouse no header PEQUENO, ele continue mudando de cor */
+.header-small:hover {
+    background-color: var(--cor-secundaria) !important;
+}
+
+.header-small:hover h1,
+.header-small:hover nav a {
+    color: var(--cor-primaria) !important; /* Texto vira marrom no hover do pequeno */
+}
+
+.depoimentos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas automáticas */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.depoimento-card {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid var(--cor-secundaria);
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.depoimento-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.depoimento-card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-align: right;
+    font-style: normal;
+}
+
+

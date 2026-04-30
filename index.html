@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicóloga Daniela Martins</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+</head>
 <body>
     <header>
         <h1>Daniela Martins - Psicóloga Clínica</h1>
         <nav>
-            <a href="#sobre">Sobre Mim</a> |
-            <a href="#servicos">Serviços</a> |
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#servicos">Serviços</a>
             <a href="#contato">Contato</a>
         </nav>
+        <!-- CORREÇÃO 1: Removi a meta tag duplicada que estava aqui dentro -->
     </header>
 
     <main>
         <!-- Seção Sobre -->
         <section id="sobre">
             <h2>Sobre Mim</h2>
+            <img src="img/dani3.jpg" alt="Foto da Psicóloga Daniela Martins" class="profile-pic3">
             <p>Olá! Sou a Daniela Martins, especialista em ansiedade e depressão. Meu objetivo é ajudar você a encontrar o equilíbrio emocional através de um atendimento acolhedor e profissional.</p>
         </section>
 
-        <!-- Seção Serviços (O que faltou) -->
+        <!-- Seção Serviços -->
         <section id="servicos">
             <h2>Serviços</h2>
             <p>Ofereço suporte especializado para as seguintes áreas:</p>
@@ -35,25 +38,41 @@
                 <li>Terapia de Casal e Família</li>
                 <li>Orientação Profissional</li>
             </ul>
-        </section>
+</section>
+        <section id="depoimentos">
+    <h2>O que dizem os pacientes</h2>
+    <div class="depoimentos-container">
+        <div class="depoimento-card">
+            <p>"A Dra. Daniela me ajudou a superar crises de ansiedade que eu achei que nunca passariam. Uma profissional incrível!"</p>
+            <span>- Maria S.</span>
+        </div>
+        <div class="depoimento-card">
+            <p>"Atendimento acolhedor e abordagem muito humana. Sinto que finalmente estou no caminho certo para minha cura."</p>
+            <span>- João P.</span>
+        </div>
+        <div class="depoimento-card">
+            <p>"Excelente profissional! Me ajudou muito a organizar meus pensamentos e lidar com o estresse do trabalho."</p>
+            <span>- Ana L.</span>
+        </div>
+    </div>
+</section>
 
-        <!-- Seção Contato (O que faltou) -->
+        <!-- Seção Contato -->
         <section id="contato">
             <h2>Contato</h2>
             <p>Sinta-se à vontade para agendar sua consulta!</p>
             <p>Email: contato@danielamartins.com</p>
-            <p>WhatsApp: (11) 99999-9999</p>
-            <!-- Um botão simples para o WhatsApp -->
-            <a href="..." class="whatsapp-button">
-                <i class="fab fa-whatsapp"></i> Agendar via WhatsApp
+            <p>WhatsApp:</p>
+            <a href="https://wa.me/5515981149756" class="whatsapp-button" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> Agendar via WhatsApp
             </a>
-
-
         </section>
+        <!-- CORREÇÃO 2: Havia uma tag </section> sobrando aqui embaixo que foi removida -->
     </main>
 
     <footer id="footer">
         <p>&copy; 2026 Psicóloga Daniela Martins - Todos os direitos reservados</p>
     </footer>
+        <script src="script.js"></script>
 </body>
 </html>
