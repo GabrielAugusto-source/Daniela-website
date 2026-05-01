@@ -275,4 +275,44 @@ footer {
     font-style: normal;
 }
 
+/* ========================================================================== 
+   SEÇÃO DE DÚVIDAS (FAQ) 
+   ========================================================================== */
 
+/* O container define como as perguntas se espalham na tela */
+.duvidas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas automáticas */
+    gap: 20px; /* Espaço entre os cards */
+    margin-top: 20px;
+}
+
+/* O card individual de cada dúvida */
+.duvida-card {
+    background: rgba(255, 255, 255, 0.4); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid var(--cor-secundaria); /* Detalhe lateral combinando com o site */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.duvida-card:hover {
+    transform: translateY(-5px); /* Flutua levemente */
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* Estilo do texto da Pergunta */
+.duvida-card h3 {
+    color: var(--cor-primaria);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo do texto da Resposta */
+.duvida-card p {
+    font-size: 0.95rem;
+    color: var(--cor-texto);
+    line-height: 1.5;
+}
