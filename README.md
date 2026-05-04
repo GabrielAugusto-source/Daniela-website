@@ -1,4 +1,4 @@
-#  WebSite - Psicóloga Daniela Martins
+#  WebSite - Psicóloga Daniela Martins (em construção)
 
 Este projeto consiste no desenvolvimento de uma Landing Page para a psicóloga Daniela Martins. O objetivo do site é transmitir confiança, acolhimento e profissionalismo, facilitando o agendamento de consultas e a apresentação da profissional.
 
