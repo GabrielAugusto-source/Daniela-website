@@ -13,7 +13,7 @@ Este projeto consiste no desenvolvimento de uma Landing Page para a psicóloga D
 - **Contato**: Informações de contato e link direto para agendamento via WhatsApp.
 - **Design Responsivo**: Site adaptável para computadores, tablets e celulares.
 
-## 🛠️ Como visualizar o projeto
+##  Como visualizar o projeto
 1. Faça o download ou clone este repositório.
 2. Localize o arquivo `index.html`.
 3. Clique com o botão direito e selecione "Abrir com" -> "Seu Navegador (Chrome, Edge, Firefox)".
