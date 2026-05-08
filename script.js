@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('.header');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
@@ -11,18 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const nav = document.querySelector('.nav');
-    
+
     if (mobileMenuToggle) {
         mobileMenuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
+            const isOpen = nav.classList.toggle('active');
+            mobileMenuToggle.setAttribute('aria-expanded', isOpen);
+            
             const icon = mobileMenuToggle.querySelector('i');
-            if (nav.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
-            } else {
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-            }
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
         });
     }
 
@@ -31,15 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', () => {
             if (nav.classList.contains('active')) {
                 nav.classList.remove('active');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
                 const icon = mobileMenuToggle.querySelector('i');
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
+                icon.classList.replace('fa-xmark', 'fa-bars');
             }
         });
     });
 
     const fadeElements = document.querySelectorAll('.fade-up, .fade-in, .fade-left, .fade-right');
-    
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -54,16 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    fadeElements.forEach(el => {
-        observer.observe(el);
-    });
+    fadeElements.forEach(el => observer.observe(el));
 
     const faqItems = document.querySelectorAll('.faq-item');
-    
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         const answer = item.querySelector('.faq-answer');
-        
+
         question.addEventListener('click', () => {
             faqItems.forEach(otherItem => {
                 if (otherItem !== item && otherItem.classList.contains('active')) {
@@ -71,14 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     otherItem.querySelector('.faq-answer').style.maxHeight = null;
                 }
             });
-            
+
             item.classList.toggle('active');
-            
-            if (item.classList.contains('active')) {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-            } else {
-                answer.style.maxHeight = null;
-            }
+            answer.style.maxHeight = item.classList.contains('active') ? answer.scrollHeight + "px" : null;
         });
     });
 });

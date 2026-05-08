@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniela Martins - Psicóloga Clínica</title>
+    <title>Daniela Martins – Psicóloga Clínica</title>
+    <meta name="description" content="Atendimento psicológico acolhedor com foco em ansiedade, depressão e autoconhecimento. Online e presencial.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="background-elements">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-    </div>
 
-    <header class="header">
+<body>
+
+    <header class="header" id="topo">
         <div class="container header-container">
-            <a href="#" class="logo">
+            <a href="#topo" class="logo">
                 <span class="logo-text">Daniela Martins</span>
-                <span class="logo-subtext">Psicóloga Clínica</span>
+                <span class="logo-subtext">Psicóloga · CRP XX/XXXXX</span>
             </a>
-            <nav class="nav">
+            <nav class="nav" id="nav-menu">
                 <ul class="nav-list">
                     <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#servicos" class="nav-link">Atendimentos</a></li>
                     <li><a href="#depoimentos" class="nav-link">Relatos</a></li>
-                    <li><a href="#duvidas" class="nav-link">FAQ</a></li>
+                    <li><a href="#duvidas" class="nav-link">Dúvidas</a></li>
                 </ul>
             </nav>
-            <a href="https://wa.me/5515998222039" class="btn btn-primary nav-btn" target="_blank">
-                Agendar Consulta
+            <a href="https://wa.me/5515998222039" class="btn btn-primary nav-btn" target="_blank" rel="noopener">
+                Falar comigo
             </a>
-            <button class="mobile-menu-toggle" aria-label="Menu">
+            <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
@@ -43,23 +42,18 @@
         <section class="hero" id="home">
             <div class="container hero-container">
                 <div class="hero-content fade-up">
-                    <h1 class="hero-title">Encontre o <span class="highlight">equilíbrio</span> que a sua mente procura.</h1>
-                    <p class="hero-description">Apoio especializado e acolhedor para ajudar você a superar a ansiedade, depressão e reencontrar a sua melhor versão.</p>
+                    <p class="hero-pretitle">Psicoterapia individual · Online e presencial</p>
+                    <h1 class="hero-title">Às vezes a gente só precisa de <em>alguém que escute de verdade.</em></h1>
+                    <p class="hero-description">Se você está sobrecarregado, ansioso ou simplesmente sem saber por onde começar — esse pode ser o primeiro passo. Aqui é um espaço sem julgamento, só para você.</p>
                     <div class="hero-actions">
-                        <a href="https://wa.me/5515998222039" class="btn btn-primary btn-large" target="_blank">
-                            <i class="fa-brands fa-whatsapp"></i> Falar com Daniela
+                        <a href="https://wa.me/5515998222039" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-whatsapp"></i> Quero marcar uma sessão
                         </a>
-                        <a href="#sobre" class="btn btn-secondary btn-large">
-                            Conhecer mais
-                        </a>
+                        <a href="#sobre" class="btn btn-ghost btn-large">Saber mais sobre mim</a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper fade-in">
-                    <img src="img/dani4.jpg" alt="Psicóloga Daniela Martins" class="hero-image">
-                    <div class="experience-badge">
-                        <i class="fa-solid fa-award"></i>
-                        <span>*Característica*</span>
-                    </div>
+                    <img src="img/dani4.jpg" alt="Daniela Martins, psicóloga clínica" class="hero-image">
                 </div>
             </div>
         </section>
@@ -67,18 +61,18 @@
         <section class="sobre section-padding" id="sobre">
             <div class="container sobre-container">
                 <div class="sobre-image-wrapper fade-right">
-                    <img src="img/dani5.jpg" alt="Consultório" class="sobre-image">
-                    <div class="decorative-box"></div>
+                    <img src="img/dani5.jpg" alt="Consultório da Psicóloga Daniela" class="sobre-image">
+                    <div class="decorative-line"></div>
                 </div>
                 <div class="sobre-content fade-left">
-                    <span class="section-subtitle">Sobre a Psicóloga</span>
-                    <h2 class="section-title">Um espaço seguro para você ser ouvido.</h2>
-                    <p>Olá! Sou a Daniela Martins, especialista em ansiedade e depressão. Meu objetivo é ajudar você a encontrar o equilíbrio emocional através de um atendimento acolhedor e profissional.</p>
-                    <p>Acredito que a terapia é uma jornada de autoconhecimento profundo. Trabalho com abordagens comprovadas para ajudar meus pacientes a desenvolverem ferramentas reais para lidar com os desafios do dia a dia.</p>
+                    <span class="section-subtitle">Um pouco sobre mim</span>
+                    <h2 class="section-title">Olá, me chamo Daniela.</h2>
+                    <p>Sou psicóloga clínica especializada no cuidado com ansiedade e depressão. Trabalho tanto online quanto presencial — e o que me move nessa profissão é acreditar, de verdade, que as pessoas podem mudar.</p>
+                    <p>Minha abordagem é sempre individual. Cada pessoa tem uma história diferente, então nunca trato dois pacientes da mesma forma. O ritmo do processo é seu — eu só caminho do seu lado.</p>
                     <ul class="sobre-features">
-                        <li><i class="fa-solid fa-check"></i> Atendimento online e presencial</li>
-                        <li><i class="fa-solid fa-check"></i> Foco em resultados e bem-estar</li>
-                        <li><i class="fa-solid fa-check"></i> Ambiente livre de julgamentos</li>
+                        <li><i class="fa-solid fa-check"></i> Atendimento online (todo o Brasil) e presencial</li>
+                        <li><i class="fa-solid fa-check"></i> Ambiente sem julgamentos, só escuta</li>
+                        <li><i class="fa-solid fa-check"></i> Horários flexíveis, inclusive aos sábados</li>
                     </ul>
                 </div>
             </div>
@@ -87,39 +81,31 @@
         <section class="servicos section-padding" id="servicos">
             <div class="container">
                 <div class="section-header text-center fade-up">
-                    <span class="section-subtitle">Minhas Especialidades</span>
-                    <h2 class="section-title">Como posso te ajudar</h2>
-                    <p class="section-description">Ofereço suporte especializado focado nas suas necessidades individuais, promovendo saúde mental e qualidade de vida.</p>
+                    <span class="section-subtitle">Atendimentos</span>
+                    <h2 class="section-title">Como posso te ajudar?</h2>
+                    <p class="section-description">Cada atendimento é pensado para a sua situação. Abaixo estão os principais temas com os quais trabalho — mas se o seu não está aqui, me manda uma mensagem.</p>
                 </div>
-                
+
                 <div class="servicos-grid">
-                    <div class="servico-card glass-card fade-up" style="transition-delay: 0.1s;">
-                        <div class="servico-icon">
-                            <i class="fa-solid fa-brain"></i>
-                        </div>
-                        <h3>Terapia para Ansiedade</h3>
-                        <p>Aprenda a lidar com pensamentos acelerados e crises, retomando o controle sobre sua própria vida e emoções.</p>
+                    <div class="servico-card fade-up" style="transition-delay: 0.1s;">
+                        <div class="servico-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>Ansiedade</h3>
+                        <p>Aquela sensação constante de que algo vai dar errado, os pensamentos que não param, o corpo sempre em alerta. Trabalhamos juntos para você recuperar a calma e o controle.</p>
                     </div>
-                    <div class="servico-card glass-card fade-up" style="transition-delay: 0.2s;">
-                        <div class="servico-icon">
-                            <i class="fa-solid fa-leaf"></i>
-                        </div>
-                        <h3>Tratamento de Depressão</h3>
-                        <p>Um caminho guiado e seguro para superar a apatia, a tristeza profunda e reencontrar o sentido das coisas.</p>
+                    <div class="servico-card fade-up" style="transition-delay: 0.2s;">
+                        <div class="servico-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <h3>Depressão</h3>
+                        <p>Falta de energia, distância das coisas que antes faziam sentido, dificuldade de se levantar. Sem pressa, sem cobrança — o processo é no seu tempo.</p>
                     </div>
-                    <div class="servico-card glass-card fade-up" style="transition-delay: 0.3s;">
-                        <div class="servico-icon">
-                            <i class="fa-solid fa-people-arrows"></i>
-                        </div>
+                    <div class="servico-card fade-up" style="transition-delay: 0.3s;">
+                        <div class="servico-icon"><i class="fa-solid fa-people-arrows"></i></div>
                         <h3>Terapia de Casal e Família</h3>
-                        <p>Melhore a comunicação, resolva conflitos e fortaleça os laços afetivos com quem você ama.</p>
+                        <p>Quando a comunicação trava e os desentendimentos viram rotina. Um espaço neutro para ouvir e ser ouvido, e construir algo melhor juntos.</p>
                     </div>
-                    <div class="servico-card glass-card fade-up" style="transition-delay: 0.4s;">
-                        <div class="servico-icon">
-                            <i class="fa-solid fa-compass"></i>
-                        </div>
-                        <h3>Orientação Profissional</h3>
-                        <p>Clareza e suporte para tomadas de decisão importantes sobre sua carreira e transições profissionais.</p>
+                    <div class="servico-card fade-up" style="transition-delay: 0.4s;">
+                        <div class="servico-icon"><i class="fa-solid fa-compass"></i></div>
+                        <h3>Crise e Autoconhecimento</h3>
+                        <p>Fases de transição, indecisão, sensação de estar perdido. Às vezes só precisamos desacelerar e entender o que a gente quer de verdade.</p>
                     </div>
                 </div>
             </div>
@@ -128,41 +114,41 @@
         <section class="depoimentos section-padding" id="depoimentos">
             <div class="container">
                 <div class="section-header text-center fade-up">
-                    <span class="section-subtitle">Histórias de Transformação</span>
-                    <h2 class="section-title">O que dizem os pacientes</h2>
+                    <span class="section-subtitle">Relatos</span>
+                    <h2 class="section-title">Palavras de quem já passou por aqui</h2>
                 </div>
-                
+
                 <div class="depoimentos-grid">
-                    <div class="depoimento-card glass-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="depoimento-card fade-up" style="transition-delay: 0.1s;">
                         <i class="fa-solid fa-quote-left quote-icon"></i>
-                        <p class="depoimento-text">"A Dra. Daniela me ajudou a superar crises de ansiedade que eu achei que nunca passariam. Uma profissional incrível e super humana."</p>
+                        <p class="depoimento-text">"Eu cheguei sem acreditar muito que ia funcionar. Mas a Daniela tem uma forma de conduzir as sessões que vai te pegando aos poucos. Hoje me reconheço de novo."</p>
                         <div class="depoimento-author">
-                            <div class="author-avatar">MS</div>
+                            <div class="author-avatar">M.S.</div>
                             <div class="author-info">
                                 <h4>Maria S.</h4>
-                                <span>Paciente Online</span>
+                                <span>Paciente online · 2 anos em terapia</span>
                             </div>
                         </div>
                     </div>
-                    <div class="depoimento-card glass-card fade-up" style="transition-delay: 0.2s;">
+                    <div class="depoimento-card fade-up" style="transition-delay: 0.2s;">
                         <i class="fa-solid fa-quote-left quote-icon"></i>
-                        <p class="depoimento-text">"Atendimento acolhedor e abordagem muito humana. Sinto que finalmente estou no caminho certo para minha cura. Indico de olhos fechados."</p>
+                        <p class="depoimento-text">"Nunca pensei que fosse falar de certas coisas com ninguém. Com ela foi diferente — dá pra ser honesto sem medo de ser julgado. Recomendo muito."</p>
                         <div class="depoimento-author">
-                            <div class="author-avatar">JP</div>
+                            <div class="author-avatar">J.P.</div>
                             <div class="author-info">
                                 <h4>João P.</h4>
-                                <span>Paciente Presencial</span>
+                                <span>Paciente presencial</span>
                             </div>
                         </div>
                     </div>
-                    <div class="depoimento-card glass-card fade-up" style="transition-delay: 0.3s;">
+                    <div class="depoimento-card fade-up" style="transition-delay: 0.3s;">
                         <i class="fa-solid fa-quote-left quote-icon"></i>
-                        <p class="depoimento-text">"Excelente profissional! Me ajudou muito a organizar meus pensamentos e lidar com o estresse absurdo do trabalho no dia a dia."</p>
+                        <p class="depoimento-text">"Tava num momento bem difícil no trabalho, com crise de ansiedade toda semana. As sessões me ajudaram a entender o que tava acontecendo comigo e a lidar diferente."</p>
                         <div class="depoimento-author">
-                            <div class="author-avatar">AL</div>
+                            <div class="author-avatar">A.L.</div>
                             <div class="author-info">
                                 <h4>Ana L.</h4>
-                                <span>Paciente Online</span>
+                                <span>Paciente online</span>
                             </div>
                         </div>
                     </div>
@@ -173,38 +159,47 @@
         <section class="faq section-padding" id="duvidas">
             <div class="container faq-container">
                 <div class="faq-content fade-right">
-                    <span class="section-subtitle">Dúvidas Frequentes</span>
+                    <span class="section-subtitle">Perguntas frequentes</span>
                     <h2 class="section-title">Ficou com alguma dúvida?</h2>
-                    <p>Aqui estão as respostas para as perguntas mais comuns. Se você tiver outra dúvida, não hesite em entrar em contato.</p>
-                    <a href="https://wa.me/5515998222039" class="btn btn-secondary mt-4" target="_blank">Falar no WhatsApp</a>
+                    <p>Separei as perguntas que mais me fazem antes de uma pessoa marcar a primeira sessão. Se a sua não estiver aqui, é só me chamar no WhatsApp.</p>
+                    <a href="https://wa.me/5515998222039" class="btn btn-secondary mt-4" target="_blank" rel="noopener">Me chamar no WhatsApp</a>
                 </div>
-                
+
                 <div class="faq-accordion fade-left">
                     <div class="faq-item">
                         <button class="faq-question">
-                            Como funciona a primeira sessão?
+                            Como é a primeira sessão?
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>A primeira sessão é um momento de acolhimento e escuta ativa, onde poderei entender profundamente suas preocupações, seu histórico e explicar como conduziremos o processo terapêutico juntos.</p>
+                            <p>A primeira sessão é principalmente de escuta. Não precisa se preparar nem saber exatamente o que falar — a gente começa pelo que estiver na cabeça. Meu papel nesse encontro é entender você e explicar como funciona o processo.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-question">
-                            Qual o tempo de duração das consultas?
+                            Quanto tempo dura cada sessão?
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>As sessões individuais têm duração média de 50 minutos e acontecem com frequência semanal, o que é ideal para a evolução e continuidade do tratamento.</p>
+                            <p>As sessões têm 50 minutos de duração e acontecem semanalmente. A frequência semanal faz diferença no processo — é ela que mantém o fio condutor do que a gente trabalha juntos.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-question">
-                            Você atende convênios médicos?
+                            Atende por convênio?
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Atualmente meu atendimento é apenas particular. No entanto, forneço recibos detalhados para que você possa solicitar o reembolso junto ao seu convênio médico, caso ele possua essa cobertura.</p>
+                            <p>No momento só atendo de forma particular. Mas emito recibo para todos os atendimentos, então se o seu plano de saúde cobre psicoterapia, você pode pedir o reembolso direto com eles.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Como funciona o atendimento online?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>As sessões online acontecem por videochamada, em plataforma segura e sigilosa. Funciona muito bem — muitos dos meus pacientes atuais começaram online e continuam assim por preferência mesmo.</p>
                         </div>
                     </div>
                 </div>
@@ -213,11 +208,13 @@
 
         <section class="cta section-padding" id="contato">
             <div class="container">
-                <div class="cta-box glass-card text-center fade-up">
-                    <h2>Dê o primeiro passo para o seu bem-estar</h2>
-                    <p>Agende uma conversa inicial e descubra como a terapia pode transformar a sua vida e suas relações.</p>
-                    <a href="https://wa.me/5515998222039" class="btn btn-primary btn-large cta-btn" target="_blank">
-                        <i class="fa-brands fa-whatsapp"></i> Agendar minha consulta
+                <div class="cta-box fade-up">
+                    <div class="cta-text">
+                        <h2>Quando quiser dar esse passo, estarei aqui.</h2>
+                        <p>Não precisa estar em crise para começar. Às vezes, só querer se entender melhor já é motivo suficiente.</p>
+                    </div>
+                    <a href="https://wa.me/5515998222039" class="btn btn-whatsapp btn-large" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i> Vamos conversar
                     </a>
                 </div>
             </div>
@@ -227,40 +224,41 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-info">
-                <a href="#" class="logo footer-logo">
+                <a href="#topo" class="logo footer-logo">
                     <span class="logo-text">Daniela Martins</span>
                 </a>
-                <p>Atendimento psicológico acolhedor e focado no seu bem-estar emocional. Especialista em ansiedade e depressão.</p>
+                <p>Psicóloga clínica especializada em ansiedade e depressão. Atendo online para todo o Brasil e presencialmente.</p>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/psi.daniela.martins?igsh=ejdyNmpkcmc1dnRq" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="mailto:danielamartins@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/psi.daniela.martins?igsh=ejdyNmpkcmc1dnRq" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:danielamartins@gmail.com" aria-label="Enviar e-mail"><i class="fa-regular fa-envelope"></i></a>
                 </div>
             </div>
             <div class="footer-links">
-                <h3>Links Úteis</h3>
+                <h3>Navegação</h3>
                 <ul>
-                    <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="#servicos">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#servicos">Atendimentos</a></li>
                     <li><a href="#depoimentos">Relatos</a></li>
-                    <li><a href="#duvidas">Dúvidas Comuns</a></li>
+                    <li><a href="#duvidas">Dúvidas</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
                 <h3>Contato</h3>
                 <ul>
-                    <li><i class="fa-brands fa-whatsapp"></i> (15) 99822-2039 </li>
+                    <li><i class="fa-brands fa-whatsapp"></i> (15) 99822-2039</li>
                     <li><i class="fa-regular fa-envelope"></i> danielamartins@gmail.com</li>
-                    <li><i class="fa-solid fa-location-dot"></i> Atendimento Online (Todo o Brasil) e Presencial</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Online · Todo o Brasil &amp; Presencial</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2026 Psicóloga Daniela Martins. Todos os direitos reservados.</p>
+                <p>© 2026 Daniela Martins – Psicóloga Clínica. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
