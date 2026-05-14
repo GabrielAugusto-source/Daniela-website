@@ -17,6 +17,8 @@ Este projeto consiste no desenvolvimento de uma Landing Page para a psicóloga D
 1. Faça o download ou clone este repositório.
 2. Localize o arquivo `index.html`.
 3. Clique com o botão direito e selecione "Abrir com" -> "Seu Navegador (Chrome, Edge, Firefox)".
+   ou
+4. Clique no link VERCEL disponibilizado 
 
 ##  Autor
 Desenvolvimento por Gabriel Augusto - Programming Beginner
