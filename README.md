@@ -23,4 +23,4 @@ Este projeto consiste no desenvolvimento de uma Landing Page para a psicóloga D
 5. Clique no link VERCEL disponibilizado 
 
 ##  Autor
-Desenvolvimento por Gabriel Augusto - Programming Beginner
+Por Gabriel Augusto - Programming Beginner
